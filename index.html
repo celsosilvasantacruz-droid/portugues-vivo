@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Português Vivo | Manuais Oficiais para Cidadania e Integração</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gradient-bg { background: linear-gradient(135deg, #006600 0%, #FF0000 100%); }
+        .glass-effect { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-green-700"><i class="fas fa-book-open mr-2"></i>Português Vivo</div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#manuais" class="hover:text-green-700 transition">Manuais</a>
+                <a href="#pagamento" class="hover:text-green-700 transition">Como Comprar</a>
+                <a href="#contacto" class="hover:text-green-700 transition">Contacto</a>
+            </nav>
+            <a href="#manuais" class="bg-red-600 text-white px-5 py-2 rounded-full font-semibold hover:bg-red-700 transition">Comprar Agora</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Domine o Português. Conquiste a Cidadania.</h1>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">A coleção definitiva para preparação do exame A2 (Cidadania/Residência), integração profissional e proficiência académica em Portugal.</p>
+            <a href="#manuais" class="bg-white text-green-700 px-8 py-3 rounded-full font-bold text-lg hover:bg-gray-100 transition shadow-lg">Ver Coleção Completa</a>
+        </div>
+    </section>
+
+    <!-- Produtos -->
+    <section id="manuais" class="py-16 container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Escolha o seu Caminho de Aprendizagem</h2>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Tomo I -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition border-t-4 border-green-600">
+                <div class="p-6">
+                    <div class="text-green-600 text-sm font-bold mb-2">NÍVEIS A1 & A2</div>
+                    <h3 class="text-xl font-bold mb-3">Tomo I: Iniciante</h3>
+                    <p class="text-gray-600 text-sm mb-4">O manual essencial para obter o certificado A2 exigido para <strong>Cidadania Portuguesa</strong> e Residência Permanente. Foco em sobrevivência e burocracia.</p>
+                    <div class="text-2xl font-bold text-gray-800 mb-4">€24,90</div>
+                    <button onclick="openModal('Tomo I (A1/A2)', '24.90')" class="w-full bg-green-600 text-white py-2 rounded-lg font-semibold hover:bg-green-700 transition">Comprar</button>
+                </div>
+            </div>
+
+            <!-- Tomo II -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition border-t-4 border-green-600">
+                <div class="p-6">
+                    <div class="text-green-600 text-sm font-bold mb-2">NÍVEIS B1 & B2</div>
+                    <h3 class="text-xl font-bold mb-3">Tomo II: Intermédio</h3>
+                    <p class="text-gray-600 text-sm mb-4">A ponte para a integração profunda. Ideal para quem quer trabalhar, estudar ou compreender a "alma lusa", DOPs e sociedade contemporânea.</p>
+                    <div class="text-2xl font-bold text-gray-800 mb-4">€29,90</div>
+                    <button onclick="openModal('Tomo II (B1/B2)', '29.90')" class="w-full bg-green-600 text-white py-2 rounded-lg font-semibold hover:bg-green-700 transition">Comprar</button>
+                </div>
+            </div>
+
+            <!-- Tomo III -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition border-t-4 border-green-600">
+                <div class="p-6">
+                    <div class="text-green-600 text-sm font-bold mb-2">NÍVEIS C1 & C2</div>
+                    <h3 class="text-xl font-bold mb-3">Tomo III: Avançado</h3>
+                    <p class="text-gray-600 text-sm mb-4">Proficiência e elegância discursiva. Indispensável para académicos, tradutores, diplomatas e profissionais de alta direção no espaço lusófono.</p>
+                    <div class="text-2xl font-bold text-gray-800 mb-4">€34,90</div>
+                    <button onclick="openModal('Tomo III (C1/C2)', '34.90')" class="w-full bg-green-600 text-white py-2 rounded-lg font-semibold hover:bg-green-700 transition">Comprar</button>
+                </div>
+            </div>
+
+            <!-- Pack Completo -->
+            <div class="bg-gray-900 rounded-xl shadow-2xl overflow-hidden transform scale-105 border-2 border-red-500 relative">
+                <div class="absolute top-0 right-0 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">MAIS VENDIDO</div>
+                <div class="p-6 text-white">
+                    <div class="text-red-400 text-sm font-bold mb-2">COLEÇÃO COMPLETA</div>
+                    <h3 class="text-xl font-bold mb-3">Pack "Mestrado da Língua"</h3>
+                    <p class="text-gray-300 text-sm mb-4">Os 3 Manuais + Grelha de Soluções Completa. Do "Olá" à elegância discursiva. Acesso vitalício a atualizações.</p>
+                    <div class="text-3xl font-bold text-white mb-4">€79,90 <span class="text-sm text-gray-400 line-through">€119,60</span></div>
+                    <button onclick="openModal('Pack Completo (I, II, III + Soluções)', '79.90')" class="w-full bg-red-600 text-white py-3 rounded-lg font-bold hover:bg-red-700 transition">Adquirir Pack</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal de Pagamento -->
+    <div id="paymentModal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center p-4">
+        <div class="bg-white rounded-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-8 relative">
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-2xl">&times;</button>
+            
+            <h3 class="text-2xl font-bold mb-2 text-gray-800">Finalizar Encomenda</h3>
+            <p class="text-gray-600 mb-6">Produto: <span id="modalProductName" class="font-semibold text-green-700"></span> | Valor: <span id="modalProductPrice" class="font-semibold"></span>€</p>
+            
+            <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-6">
+                <p class="text-sm text-yellow-800"><strong>Instruções:</strong> Escolha um dos métodos abaixo e faça a transferência. De seguida, envie o comprovativo para <a href="mailto:portuguese.language.sales@proton.me" class="underline font-bold">portuguese.language.sales@proton.me</a> com o assunto "Encomenda: [Nome do Pack]". Receberá os ficheiros PDF em até 24h.</p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- PayPal -->
+                <div class="flex items-center p-4 border rounded-lg hover:bg-gray-50 transition">
+                    <i class="fab fa-paypal text-3xl text-blue-700 mr-4"></i>
+                    <div>
+                        <div class="font-bold">PayPal</div>
+                        <div class="text-sm text-gray-600 font-mono bg-gray-100 p-1 rounded select-all">celbasi@gmail.com</div>
+                    </div>
+                </div>
+
+                <!-- Wise -->
+                <div class="flex items-center p-4 border rounded-lg hover:bg-gray-50 transition">
+                    <i class="fas fa-money-bill-transfer text-3xl text-green-600 mr-4"></i>
+                    <div>
+                        <div class="font-bold">Wise (Antiga TransferWise)</div>
+                        <div class="text-sm text-gray-600 font-mono bg-gray-100 p-1 rounded select-all">@celsobarbosas</div>
+                    </div>
+                </div>
+
+                <!-- Revolut -->
+                <div class="flex items-center p-4 border rounded-lg hover:bg-gray-50 transition">
+                    <i class="fas fa-wallet text-3xl text-blue-500 mr-4"></i>
+                    <div>
+                        <div class="font-bold">Revolut</div>
+                        <div class="text-sm text-gray-600 font-mono bg-gray-100 p-1 rounded select-all">@celso01ik</div>
+                    </div>
+                </div>
+
+                <!-- Bitcoin -->
+                <div class="flex items-center p-4 border rounded-lg hover:bg-gray-50 transition">
+                    <i class="fab fa-bitcoin text-3xl text-orange-500 mr-4"></i>
+                    <div class="w-full">
+                        <div class="font-bold">Bitcoin (BTC)</div>
+                        <div class="text-xs text-gray-600 font-mono bg-gray-100 p-2 rounded break-all select-all">bc1qualjl3n2p6t80msfk89dvkzsvnzk5m4x2fxl8l</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contacto -->
+    <section id="contacto" class="bg-gray-100 py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-8">Precisa de Ajuda?</h2>
+            <div class="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <i class="fas fa-info-circle text-3xl text-green-600 mb-3"></i>
+                    <h3 class="font-bold text-lg mb-2">Informações Gerais</h3>
+                    <a href="mailto:portuguese.language@proton.me" class="text-blue-600 hover:underline">portuguese.language@proton.me</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <i class="fas fa-shopping-cart text-3xl text-red-600 mb-3"></i>
+                    <h3 class="font-bold text-lg mb-2">Vendas e Suporte a Encomendas</h3>
+                    <a href="mailto:portuguese.language.sales@proton.me" class="text-blue-600 hover:underline">portuguese.language.sales@proton.me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-8 text-center text-sm">
+        <div class="container mx-auto px-6">
+            <p>&copy; 2026 Português Vivo. Todos os direitos reservados.</p>
+            <p class="mt-2">Manual Completo de Língua e Cultura Portuguesa para Estrangeiros.</p>
+        </div>
+    </footer>
+
+    <script>
+        function openModal(product, price) {
+            document.getElementById('modalProductName').innerText = product;
+            document.getElementById('modalProductPrice').innerText = price;
+            document.getElementById('paymentModal').classList.remove('hidden');
+        }
+        function closeModal() {
+            document.getElementById('paymentModal').classList.add('hidden');
+        }
+        // Fechar modal ao clicar fora
+        document.getElementById('paymentModal').addEventListener('click', function(e) {
+            if (e.target === this) closeModal();
+        });
+    </script>
+</body>
+</html>
